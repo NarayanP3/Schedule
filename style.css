@@ -1,0 +1,205 @@
+body {
+  height: 100%;
+  margin: 0%;
+  padding: 0;
+  overflow: hidden;
+  background-image: url("images/border.png");
+  background-size: 100% 81%;
+}
+.image {
+  align-items: flex-end;
+  flex-direction: column;
+}
+.text {
+  margin-top: 4vw;
+  margin-left: 20%;
+  font-family: "Gotu", sans-serif;
+  font-weight: 100;
+}
+.title {
+  color: #212256;
+  line-height: 5px;
+  font-size: 1.6vw;
+}
+#sent {
+  color: #f05f31;
+  font-size: 1.2vw;
+}
+.content {
+  display: flex;
+  background-image: url("images/BACKGROUND.png");
+  background-size: 100% 96.79%;
+  height: 55.5vw;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  margin-top: 21px;
+  margin-bottom: 52.45px;
+  margin-left: 23.45px;
+  margin-right: 25.9px;
+}
+.elephant {
+  height: 18vw;
+  width:22vw;
+  overflow:hidden;
+  margin-top: 92.7%;
+  margin-left: -12px;
+}
+.accordion-container {
+  width: 100%;
+  /* height: 42vw; */
+  margin-top: 4vw;
+  margin-left: -20px;
+}
+.accordion-container ul {
+  list-style: none;
+  display: flex;
+  cursor: pointer;
+}
+.accordion-container ul li {
+  position: relative;
+  float: left;
+  transition: 0.3s ease-in-out;
+  /* width: calc((100% - 55vw / 1.1) / 6); */
+}
+
+.first {
+  background-image: url(images/orange.png);
+  background-size: 49.9vw 40vw;
+  /* overflow: hidden; */
+  height: 40vw;
+}
+.second {
+  background-image: url(images/purple-background.png);
+  background-size: 49.9vw 40vw;
+  /* overflow: hidden; */
+  height: 40vw;
+}
+
+.last{
+  position: relative;
+  z-index: 1;
+  right: -29vw;
+}
+.second_last {
+  position: relative;
+  z-index: 2;
+  right: 20vw;
+}
+
+.third_last {
+  position: relative;
+  z-index: 3;
+  right: 69vw;
+}
+
+.fourth_last {
+  position: relative;
+  z-index: 4;
+  right: 118vw;
+}
+
+.fifth_last {
+  position: relative;
+  z-index: 5;
+  right: 167vw;
+}
+.sixth_last {
+  position: relative;
+  z-index: 6;
+  right: 216vw;
+}
+
+.seventh_last {
+  position: relative;
+  z-index: 7;
+  right: 265vw;
+}
+
+
+
+
+.accordion {
+  margin: 2vw;
+  height: 20vw;
+  width: 47vw;
+  border-radius: 5vw;
+  display: flex;
+  padding: 2vw;
+}
+.accordion1 {
+  margin: 2vw;
+  width: 47vw;
+  height: 20vw;
+  border-radius: 5vw;
+  display: flex;
+  padding: 2vw;
+}
+.outbox {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-align: start;
+  white-space: nowrap;
+  width: 4vw;
+  color: #face39;
+  padding: 1vw;
+  margin-top: 30vw;
+  font-weight: 600;
+  font-family: "Karla", sans-serif;
+  margin-left: 1vw;
+}
+.panel {
+  background-image: url("images/yellow-card.png");
+  border: 5px solid #FFD848;
+  border-radius: 3%;
+  background-size: 110%;
+  width: 31vw;
+  height: 20.8vw;
+  padding: 3vw;
+  display: flex;
+  justify-content: space-between;
+  color: #22245b;
+  font-size: 1.2vw;
+  margin-top: 1.4vw;
+  line-height: 50px;
+}
+/* .card.active {
+  width: 50vw;
+} */
+@media (max-width: 768px) {
+  .accordion-container {
+    width: 100%;
+    height: 44vw;
+    margin-left: 5vw;
+    margin-top: 5vw;
+  }
+  .outbox {
+    font-size: 3.5vw;
+  }
+  .accordion-container ul li {
+    width: calc((100% - 47vw / 0.9) / 5);
+    
+  }
+  .accordion {
+    margin: 2vw;
+    height: 23vw;
+    width: 67vw;
+    border-radius: 5vw;
+    display: flex;
+    padding: 2vw;
+  }
+  .accordion1 {
+    margin: 2vw;
+    width: 67vw;
+    height: 23vw;
+    border-radius: 5vw;
+    display: flex;
+    padding: 2vw;
+  }
+  .panel {
+    border-radius: 2vw;
+    width: 30vw;
+    padding: 3vw;
+    font-size: 1.5vw;
+  }
+}
